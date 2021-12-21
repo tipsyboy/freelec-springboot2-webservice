@@ -30,6 +30,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 //    compile('org.projectlombok:lombok') // 구글링 - compile vs implementation
-    implementation 'org.projectlombok:lombok'
+    // 프로젝트에 롬복 추가 - 어느 버전에서 부터인가 롬복이 번들로 들어가 있지만 프로젝트마다 세팅(build.gradle, Enable ~)은 해야함
+    implementation 'org.projectlombok:lombok' 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
