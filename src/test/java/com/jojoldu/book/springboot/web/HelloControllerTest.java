@@ -24,6 +24,7 @@ public class HelloControllerTest {
 
         String hello = "hello";
 
+        // 여기서 부트가 켜지고 원래 코드의 페이지를 받아오는건가? 헷갈리네;;
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(hello));
