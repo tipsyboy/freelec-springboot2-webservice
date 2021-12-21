@@ -1,6 +1,7 @@
 buildscript {
     ext {
-        springBootVersion = '2.1.7.RELEASE' // build.gralde 페이지의 전역변수를 설정
+        // build.gralde 페이지의 전역변수를 설정
+        springBootVersion = '2.1.7.RELEASE'
     }
     repositories {
         mavenCentral()
