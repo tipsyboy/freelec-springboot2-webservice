@@ -35,6 +35,7 @@ public class PostsApiController {
         return id;
 
         /**
+         *  12.23
             게시글 delete 구현시에 delete() 메소드를 IndexController에 넣는 바람에
             'java.lang.IllegalArgumentException: Unknown return value type: java.lang.Long' Error를 발생시킴.
             화면을 리턴하는 구조에서 ResponseBody를 리턴하지 않기 때문에 에러를 발생시킨것
