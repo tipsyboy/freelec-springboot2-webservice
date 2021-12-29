@@ -47,4 +47,6 @@ dependencies {
     // spring security - 소셜 로그인 등의 소셜기능 구현시 의존성 주입
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
+    // spring-session-jdbc 등록
+    implementation 'org.springframework.session:spring-session-jdbc'
 }
