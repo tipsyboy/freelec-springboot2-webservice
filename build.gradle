@@ -49,4 +49,7 @@ dependencies {
 
     // spring-session-jdbc 등록
     implementation 'org.springframework.session:spring-session-jdbc'
+
+    // spring security test를 위한 의존성
+    implementation 'org.springframework.security:spring-security-test'
 }
