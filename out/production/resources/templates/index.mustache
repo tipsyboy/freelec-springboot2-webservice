@@ -8,7 +8,8 @@
             <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
 
             <!-- windows OS를 사용할때, userName으로 값을 주고 받으면 windows 사용자명이 출력됨
-                 이를 방지하기 위해서 예제에서와 attributeName을 다르게 사용한다. -->
+                 이를 방지하기 위해서 예제에서와 attributeName을 다르게 사용한다.
+                 참조: https://github.com/saechimdaeki/Spring_boot_AWS/issues/2 -->
             {{#loginUserName}}
                 Logged in as: <span id="user">{{loginUserName}}</span>
                 <a href="/logout" class="btn btn-info active" role="button">Logout</a>
