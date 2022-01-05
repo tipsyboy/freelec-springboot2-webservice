@@ -52,4 +52,7 @@ dependencies {
 
     // spring security test를 위한 의존성
     implementation 'org.springframework.security:spring-security-test'
+
+    // maria db
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
 }
