@@ -16,6 +16,23 @@ script: "./gradlew clean build"
 before_install:
   chmod +x gradlew # gradlew 실행 권한 부여 - git push 전에 update를 사용해서 권한을 부여하는 방법이 있으니 찾아볼 것
 
+before_deploy:
+  - zip -r freelec-springboot2-webservice * # 현재 위치 모든 파일을 이 이름으로 zip 압축
+  - mkdir -p deploy # 디렉토리 생성
+  - mv freelec-springboot2-webservice.zip deploy/freelect-springboot2-webservice.zip # file 이동
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: freelec-springboot2-s3-build
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private
+    local_dir: deploy # deploy전에 생성한 디렉토리 지정
+    wait-until-deployed: true
+
+
 # CI 실행 완료 시 메일로 알람
 notifications:
   email:
