@@ -1,7 +1,8 @@
-# AWS codedeploy 설정
+# AWS codedeploy 설정 - 배포 테스팅중
 version: 0.0 # CodeDeploy 버전. 프로젝트 버전이 아니면 0.0 이외의 것은 에러를 발생
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/app/step2/zip/
+  - source:  /
+    destination: /home/ec2-user/app/step3/zip/
     overwrite: yes
+
