@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jojoldu.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-05T19:15:46" hostname="DESKTOP-J53CL1C" time="0.008">
+<testsuite name="com.jojoldu.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-08T06:47:27" hostname="DESKTOP-J53CL1C" time="0.025">
   <properties/>
-  <testcase name="롬복_기능_테스트" classname="com.jojoldu.book.springboot.web.dto.HelloResponseDtoTest" time="0.008"/>
+  <testcase name="롬복_기능_테스트" classname="com.jojoldu.book.springboot.web.dto.HelloResponseDtoTest" time="0.025"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
